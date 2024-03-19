@@ -1,0 +1,245 @@
+:root{
+    --green:#47817a;
+}
+
+input[type="date"]{
+    width: 470px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+input[type="date"]:focus {
+outline: none; 
+border-color: var(--green); 
+}
+.organizing__button{
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    font-weight: 600;
+}
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    border: 2px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #47817a; /* Change color as needed */
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.draw{
+    padding: 8px 8px;
+}
+
+.send__gift{
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+.in{
+    display: flex;
+    gap: 10px;
+}
+.radio-label{
+    width:500px;
+    font-size:12px;
+
+}
+.your__email{
+    display: grid;
+    gap: 2px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.your__email input[type="email"]{
+    width: 470px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--green);
+}
+input[type="text"]:focus {
+outline: none;
+border-color: var(--green); 
+}
+
+
+.selcet__amount {
+    margin-bottom: 20px;
+    
+  }
+
+  .usd{
+    display: flex;
+    gap: 5px;
+  }
+  
+  /* Style for the label */
+  .selcet__amount label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .selcet__amount input[type="number"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .selcet__amount select {
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+ 
+  .selcet__amount select:focus {
+    border-color:var(--green);
+    outline: none;
+  }
+
+  .social__platform{
+    display: flex;
+    flex-direction: column;
+  }
+
+  select{
+    width: 470px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--green);
+  }
+  select:focus{
+    outline: none;
+    border-color: var(--green); 
+  }
+
+  textarea {
+    width: 470px; 
+    height: 120px; 
+    padding: 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+ 
+  textarea:focus {
+    border-color: var(--green); 
+    outline: none; 
+  }
+
+ .area .textar{
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .rating__container{
+    width: 100%;
+    position: relative;
+    background:var(--green);
+    padding: 20px;
+    margin-top: 35rem;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    overflow: visible;
+    
+}
+.rating{
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-container{
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    margin: 33rem 0 ;
+    width: 600px;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+
+.from__ready{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 3rem;
+    border-radius: 20px;
+
+}
+
+@media (max-width:600px){
+  .rating__image{
+    display: none;
+  }
+  .form-container{
+    top: 50%;
+    width: 80%;
+    left: -30%;
+  }
+  .rating__container{
+    width: 100%;
+    position: relative;
+    background:var(--green);
+    padding: 10px;
+    margin-top: 80rem;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    overflow: visible;
+  }
+  .your__email input[type="email"]{
+    width: 360px;
+ 
+}
+select{
+  width: 360px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--green);
+}
+textarea {
+  width: 360px; 
+  height: 120px; 
+  
+}
+.form-container .myDate{
+  width: 360px;
+} 
+}

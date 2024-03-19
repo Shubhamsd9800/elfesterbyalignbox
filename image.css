@@ -1,0 +1,64 @@
+
+.form-container{
+    position: absolute;
+    top: 53%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    /* margin: rem 0 ; */
+    width: 650px;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+
+.photos1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px;
+  }
+  .images{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+  }
+  .photos1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  .selected {
+    border: 2px solid #47817a;
+  }
+
+  .images:hover:not(.selected) img {
+    filter: brightness(70%);
+  }
+
+  .rating__container{
+    width: 100%;
+    position: relative;
+    background:var(--green);
+    padding: 20px;
+    margin-top: 55rem;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    overflow: visible;
+    
+}
+.get__party{
+  margin-top: 30px;
+  width: 250px;
+  text-align: center;
+  margin-left: 8rem;
+}
